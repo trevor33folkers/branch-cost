@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Cost Conversion</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="brCostStyle.css">
+  </head>
+  <body>
+    <h1>Branch Cost Calculator</h1>
+    <h3>COGS</h3>
+    <input type="text" id="cogs" maxlength="8">
+    <h3>BR-COST</h3>
+    <input type="text" id="cost"maxlength="8">
+    <h3>Current GP</h3>
+    <input type="text" id="cur" maxlength="8">
+    <h3>Desired GP</h3>
+    <input type="text" id="des" maxlength="8">
+    <br>
+    <button onclick="calculate()">Calculate</button>
+    <h3>New BR-COST:</h3>
+    <h3 id="new_br"></h3>
+</html>

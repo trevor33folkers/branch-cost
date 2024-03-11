@@ -11,3 +11,10 @@ function calculate() {
   console.log((new_br));
   document.getElementById('new_br').innerHTML = new_br;
 }
+
+function margin() {
+  var cogs = document.getElementById('cogs').value;
+  var des = document.getElementById('des').value;
+  var new_sell = cogs / (1-(des/100));
+  document.getElementById('new_sell').innerHTML = new_sell;
+}
