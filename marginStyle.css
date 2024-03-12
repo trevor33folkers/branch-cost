@@ -21,7 +21,8 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 100%; /* Make input fields full-width on small screens */
+  width: 80%; /* Adjusted width for input fields on smaller screens */
+  max-width: 300px; /* Set maximum width for input fields */
 }
 
 button {
@@ -35,7 +36,8 @@ button {
   border-radius: 5px;
   margin: 10px 0; /* Adjusted margin */
   transition: background-color 0.3s;
-  width: 100%; /* Make button full-width on small screens */
+  width: 80%; /* Adjusted width for buttons on smaller screens */
+  max-width: 300px; /* Set maximum width for buttons */
 }
 
 button:hover {
@@ -50,21 +52,10 @@ button:hover {
 
 /* Media query for screens smaller than 600px (typical mobile devices) */
 @media screen and (max-width: 600px) {
-  h1 {
-    font-size: 24px; /* Adjust font size for smaller screens */
-  }
-
-  h3 {
-    font-size: 16px; /* Adjust font size for smaller screens */
-  }
-
   input,
   button {
-    padding: 8px; /* Adjust padding for smaller screens */
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
-
-  #new_sell {
-    font-size: 18px; /* Adjust font size for smaller screens */
+    width: 100%; /* Make input fields and buttons full-width on small screens */
+    max-width: none; /* Remove maximum width on small screens */
   }
 }
+
