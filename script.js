@@ -18,3 +18,17 @@ function margin() {
   var new_sell = cogs / (1-(des/100));
   document.getElementById('new_sell').innerHTML = new_sell;
 }
+
+function list() {
+  var list = document.getElementById('list').value;
+  var mult = document.getElementById('mult').value;
+  var our_cost = list * mult;
+  document.getElementById('our_cost').innerHTML = our_cost;
+}
+
+function listMargin() {
+  var our_cost = document.getElementById('our_cost').innerHTML;
+  var margin = document.getElementById('margin').value;
+  var cust_cost = our_cost / (1-(margin/100));
+  document.getElementById('cust_cost').innerHTML = cust_cost;
+}
