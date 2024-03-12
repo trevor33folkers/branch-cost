@@ -57,5 +57,8 @@ button:hover {
     width: 100%; /* Make input fields and buttons full-width on small screens */
     max-width: none; /* Remove maximum width on small screens */
   }
+  body {
+    height: 100%;
+  }
 }
 
