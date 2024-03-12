@@ -3,25 +3,26 @@ body {
   background-color: #f4f4f4;
   text-align: center;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh; /* Set minimum height to 100% of viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
 }
 
 h1 {
   color: #800080; /* Purple color */
-  margin-bottom: 10px; /* Adjusted margin */
+  margin-bottom: 10px;
+  font-size: 24px; /* Adjusted font size for better visibility on mobile */
 }
 
 h3 {
   color: #333;
-  margin-bottom: 5px; /* Adjusted margin */
+  margin-bottom: 5px;
 }
 
 input {
-  padding: 8px;
+  padding: 10px; /* Adjusted padding for better visibility on mobile */
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -31,7 +32,7 @@ input {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 24px; /* Adjusted padding for better visibility on mobile */
   font-size: 16px;
   background-color: #ffeb3b;
   color: #333;
@@ -51,7 +52,7 @@ button:hover {
 
 #new_sell {
   color: #4caf50;
-  font-size: 24px;
+  font-size: 24px; /* Adjusted font size for better visibility on mobile */
   margin-top: 10px;
 }
 

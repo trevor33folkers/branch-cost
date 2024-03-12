@@ -3,16 +3,17 @@ body {
   background-color: #f4f4f4;
   text-align: center;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh; /* Set minimum height to 100% of viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
 }
 
 h1 {
   color: #800080; /* Purple color */
-  margin-bottom: 10px; /* Adjusted margin */
+  margin-bottom: 20px;
+  font-size: 24px; /* Adjusted font size for better visibility on mobile */
 }
 
 a {
