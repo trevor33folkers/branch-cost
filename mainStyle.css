@@ -1,32 +1,43 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    margin: 20px;
-  }
-  
-  h1 {
-    color: #800080; /* Purple color */
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 10px; /* Adjusted margin */
+}
+
+h1 {
+  color: #800080; /* Purple color */
+  margin-bottom: 10px; /* Adjusted margin */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffeb3b; /* Yellow color */
+  color: #333;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s;
+  width: 80%; /* Adjusted width for buttons on smaller screens */
+  max-width: 300px; /* Set maximum width for buttons */
+}
+
+button:hover {
+  background-color: #ffc107; /* Darker yellow color on hover */
+}
+
+/* Media query for screens smaller than 600px (typical mobile devices) */
+@media screen and (max-width: 600px) {
   button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ffeb3b; /* Yellow color */
-    color: #333;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 10px;
-    transition: background-color 0.3s;
+    width: 100%; /* Make buttons full-width on small screens */
+    max-width: none; /* Remove maximum width on small screens */
   }
-  
-  button:hover {
-    background-color: #ffc107; /* Darker yellow color on hover */
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333;
-  }
+}
