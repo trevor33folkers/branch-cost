@@ -59,8 +59,8 @@ button:hover {
 @media screen and (max-width: 600px) {
   input,
   button {
-    width: 100%;
-    max-width: none;
+    width: 80%; /* Adjusted width for better visibility on mobile */
+    max-width: 300px;
   }
 }
 
